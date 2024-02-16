@@ -1,6 +1,52 @@
 *{
     background-color: black;
 }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ----------------------------------------- */
+
+/* --header-- */
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
@@ -22,6 +68,9 @@ body {
     font-size: 20px;
     margin-right: 40px;
 }
+.nav-item:hover {
+    color: blanchedalmond;
+}
 .nav-item:last-child {
     margin-right: 0px;
   }
@@ -41,6 +90,7 @@ body {
     color: white;
     font-weight: 700;
     font-size: 50px;
+    line-height: 65px;
     left: 160px;
     width: 665px;
 }
@@ -49,7 +99,7 @@ body {
     width: 121px;
     height: 60px;
     left: 510px;
-    top: 60px;
+    top: 67px;
 }
 .background {
     position: relative;
@@ -57,4 +107,109 @@ body {
 .svg-image {
     position: absolute;
     width: 100%;
+}
+
+/* --recommended-- */
+.recommended {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 288px;
+}
+.recommended_item {
+    width: 340px;
+    height: 106px;
+    border-radius: 8px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+}
+.recommended_item_img {
+    height: 70px;
+    width: 70px;
+    padding: 0px 20px;
+}
+.recommended_item_text {
+    padding-right: 20px;
+    font-weight: 600;
+}
+.catalog {
+    margin-top: 100px;
+}
+.catalog_title {
+    font-weight: 600;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+/* --slider-- */
+.catalog_slider {
+    position: relative;
+    padding: 0 60px;
+}
+.catalog_slider__item {
+    width: 200px;
+    height: 200px;
+    padding: 0 5px;
+}
+.slider_item__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.slick-track {
+    display: flex;
+}
+.slick-list {
+    overflow: hidden;
+}
+.catalog_slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 0;
+    width: 50px;
+    height: 46px;
+}
+.catalog_slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url('assets/arrow-prev-svgrepo-com.svg') 0 0 / 100% no-repeat;
+}
+.catalog_slider .slick-arrow.slick-next {
+    right: 0;
+    background: url('assets/arrow-next-svgrepo-com.svg') 0 0 / 100% no-repeat;
+}
+.catalog_slider .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.catalog_slider .slick-dots li{
+    list-style: none;
+    margin: 0px 10px;
+}
+.catalog_slider .slick-dots li.slick-active button {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+.catalog_slider .slick-dots button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 0;
+    border: none;
+    color: inherit;
+    cursor: pointer;
 }
