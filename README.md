@@ -1,2 +1,2 @@
 # shoes site
-# yusupozdoyev.github.io/shoes/
+# https://yusupozdoyev.github.io/shoes/
