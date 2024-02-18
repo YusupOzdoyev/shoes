@@ -1,6 +1,3 @@
-*{
-    background-color: black;
-}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -51,11 +48,19 @@ body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
+    background-color: black;
 }
 .container {
     margin: 0px 135px;
+    /* max-width: 1170px; */
+}
+.header {
+    width: 100%;
+    margin: 0 auto;
 }
 .header-line {
+    margin: 0 auto;
+    max-width: 1440px;
     padding-top: 25px;
     display: flex;
     align-items: center;
@@ -103,6 +108,8 @@ body {
 }
 .background {
     position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .svg-image {
     position: absolute;
@@ -114,15 +121,17 @@ body {
     color: white;
     display: flex;
     justify-content: space-between;
-    margin-top: 288px;
+    margin: 288px auto 0;
+    max-width: 1440px;
+    width: 100%;
 }
 .recommended_item {
-    width: 340px;
-    height: 106px;
     border-radius: 8px;
     border: 2px solid white;
     display: flex;
     align-items: center;
+    padding: 15px 10px;
+    min-width: 260px;
 }
 .recommended_item_img {
     height: 70px;
@@ -135,6 +144,7 @@ body {
 }
 .catalog {
     margin-top: 100px;
+    width: 100%;
 }
 .catalog_title {
     font-weight: 600;
@@ -242,4 +252,67 @@ body {
     max-width: 300px;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+/* --footer-- */
+.footer {
+    margin-top: 100px;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.contacts {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+.contacts_title {
+    padding: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+}
+.contacts-tel, .contacts-inst {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacts-link {
+    color: #fff;
+}
+.title_contacts {
+    color: #f6f6f6;
+    font-weight: 500;
+    font-size: 15px;
+    opacity: 50%;
+}
+.link-title {
+    display: flex;
+    align-items: center;
+}
+.contacts-link {
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.img-contacts {
+    margin-right: 10px;
+}
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(36, 30, 30);
+    border: 2px;
+    border-radius: 8px;
 }
